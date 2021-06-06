@@ -17,9 +17,7 @@
             font-family: 'Mitr', sans-serif;
             margin: 0;
             padding: 0;
-            background: rgb(241,241,232);
-background: linear-gradient(177deg, rgba(241,241,232,1) 0%, rgba(191,220,174,1) 100%);        
-            line-height: 40px;
+            background: linear-gradient(177deg, rgba(241,241,232,1) 0%, rgba(191,220,174,1) 58%,#206a5d 100%);        
             }
         /* bar */
         .topnav {
@@ -336,17 +334,18 @@ background: linear-gradient(177deg, rgba(241,241,232,1) 0%, rgba(191,220,174,1) 
         justify-content: center;
         background-image: linear-gradient( #f1f1e8);
         padding: 10px;
-
+        width: auto;
     }
 
     .boxcal {
-        width: auto;
+        
         background-color: #ffffff;
         margin: 20px;
         padding: 20px;
         align-content: center;
         font-size: 14px;
         justify-content: center;
+        border-radius: 50px;
     }
 
     .evpic {
@@ -442,14 +441,26 @@ background: linear-gradient(177deg, rgba(241,241,232,1) 0%, rgba(191,220,174,1) 
             </h3>
             <p><br> *ค่าชาร์จไฟรถ EV ประมาณ 0.7-1 บาท/กิโลเมตร เมื่อเทียบค่าเติมน้ำมันรถทั่วไปประมาณ 3 บาท/กิโลเมตร
                 ทำให้สามารถประหยัดค่าเชื้อเพลิงรถไปได้มากกว่า 3 เท่า</p>
-            <div style="direction: rtl;"><a href="https://www.autospinn.com/2020/04/electric-vehicle-types-hev-phev-bev-fcev-78020"><input
-                        type="button" value="See More" class="button5"></a></div>
-        </div><br>
-        <div><img src="https://sv1.picz.in.th/images/2021/05/27/PPHyDt.png" alt="PPHyDt.png" border="0" class="evpic">
+            <div style="direction: rtl;"><a
+                    href="https://www.autospinn.com/2020/04/electric-vehicle-types-hev-phev-bev-fcev-78020"><input type="button"
+                        value="See More" class="button5"></a></div>
+            <div><img src="https://sv1.picz.in.th/images/2021/05/27/PPHyDt.png" alt="PPHyDt.png" border="0" class="evpic">
         </div>
         <div id="divCar" class="container_car responsive"><img src="https://sv1.picz.in.th/images/2021/05/27/PPKInt.png"
                 alt="PPKInt.png" border="0" class="carrun">
         </div>
+            <div class="title">
+                <div class="cardbox" id="game">
+                    <div class="textcardbox">
+                        <h1 class="h1evgame">EV CHARGER GAME</h1>
+                        <h2 class="h1evgame">มาจับคู่หัวชาร์จกับประเภทของหัวชาร์จกัน </h2>
+                    </div>
+                    <h4>จับคู่หัวชาร์จไปแล้ว <span id='gameScore'>0</span> ประเภท</h4>
+                    <h4><span id='gameConsole'>เริ่มกันเลย !!</span></h4>
+                    <div id="gameBoard"></div>
+                </div>
+            </div>
+            </div><br>
     </div>
 </body>
 <style>
@@ -459,7 +470,6 @@ background: linear-gradient(177deg, rgba(241,241,232,1) 0%, rgba(191,220,174,1) 
     }
 
     .cardbox {
-        background-image: linear-gradient( #f1f1e8 , #bfdcae, #f1f1e8 );
         padding: 20px;
         justify-self: center;
     }
@@ -467,16 +477,12 @@ background: linear-gradient(177deg, rgba(241,241,232,1) 0%, rgba(191,220,174,1) 
         text-align: center;
         font-size: 15px;
     }
+    .h1evgame {
+        font-size: 25px;
+        -webkit-text-stroke: 1px black;
+        color:#fed049 ;
+    }
 </style>
-<body></body>
-<div class="title" >
-    <div class="cardbox">
-        <div class="textcardbox"><h1 style="font-size: 25px;">EV CHARGER GAME</h1>
-        <h2>มาจับคู่หัวชาร์จกับประเภทของหัวชาร์จกัน </h2></div>
-        <h4>จับคู่หัวชาร์จไปแล้ว <span id='gameScore'>0</span> ประเภท</h4>
-        <h4><span id='gameConsole'>เริ่มกันเลย !!</span></h4>
-        <div id="gameBoard"></div>
-    </div>
-</div>
+
 </body>
 </html>
